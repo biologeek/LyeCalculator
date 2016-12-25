@@ -38,13 +38,13 @@
 						Choose your oils :
 
 						<div class="row" ng-repeat="oil in idxController.selectedOils">
-							<!--<div class="col-sm-4">
+							<div class="col-sm-4">
 								<select multiple class="form-control">
 									<option ng-repeat="oilInv for oilInv in idxController.oilsList" value="oil.id">
-										{{oil.name}}
+										{{oilInv.name}}
 									</option>
 								</select>
-							</div>-->
+							</div>
 							<div class="col-sm-4">
 								<input type="text" />
 							</div>
@@ -55,8 +55,17 @@
 
 						<div class="row">
 							<div class="col-sm-4">
-								</div>
+								<select multiple class="form-control" ng-options="oilInv.name as oilInv.id for oilInv in idxController.oilsList track by oilInv.id" ng-model="currentOil.oil">
+								</select>
+							</div>-
+							<div class="col-sm-4">
+								<input type="text" ng-model="currentOil.quantity" />
+							</div>
+							<div class="col-sm-4">
+								<button ng-click="">Add</button>
+							</div>
 						</div>
+
 
 					</div>
 					<div class="panel-footer">

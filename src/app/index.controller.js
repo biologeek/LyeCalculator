@@ -5,24 +5,24 @@
 
 
 
-	IndexController.$inject = ['$scope', 'Notification'];//, 'CalculatorService'];
+	IndexController.$inject = ['$scope', 'Notification', 'CalculatorService'];
 
 
-	function IndexController($scope, Notification){//, CalculatorService){
+	function IndexController($scope, Notification, CalculatorService){
 
 		var vm = this;
 
 		vm.selectedOils=[];
+		vm.oilsList = [];
 		console.log(vm.oilsList);
-		/*CalculatorService.getOilsInventory(function(data){
+		CalculatorService.getOilsInventory(function(data){
 			vm.oilsList = data;
+		console.log(vm.oilsList);
 		}, function(data){
 
 		});
-*/
 
-		Notification.error('ble')
-		console.log(vm.oilsList);
+
 
 	}
 

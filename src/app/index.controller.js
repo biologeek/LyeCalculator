@@ -19,6 +19,10 @@
 		 * Stores available oils list
 		 */
 		vm.oilsList = [];
+		/**
+		 * Stores available fatty acids characteristics
+		 */
+		vm.fattyAcidsList = [];
 		vm.currentOil = [];
 
 		/**
@@ -28,8 +32,11 @@
 
 
 		CalculatorService.getOilsInventory(function(data){
-
 			vm.oilsList = data;
+		}, function(data){});
+
+		CalculatorService.getFattyAcids(function(data){
+			vm.fattyAcidsList = data;
 		}, function(data){});
 
 
@@ -63,21 +70,23 @@
 			if (vm.selectedOils.length > 0){
 				_.each(vm.selectedOils, function(item){
 					/*
-					 * For each complex oil (eg olive oil), separate into each triglyceride composing the oil (eg palmitic oil)
+					 * For each complex oil (eg olive oil), determines triglyceride composition (eg palmitic oil)
 					 * For each triglyceride, calculates necesary sodium hydroxyde quantity in moles then in grams
 					 */
 					var currentOilMolarQuantity = 0; //moles
-					_.each(item.composition, function(component){
-						console.log('1. '+currentOilMolarQuantity.toFixed(5))
-						currentOilMolarQuantity = currentOilMolarQuantity + item.quantity * component.percentage / (component.molarMass * 100);	
-						console.log('2. '+currentOilMolarQuantity.toFixed(5))
-						console.log (component)
-						console.log(component.name + ' : '+ item.quantity * component.percentage / (component.molarMass * 100))
+					_.each(item.composition, function(fattyAcid){
+
+						var component = _.find(vm.fattyAcidsList, function(o){
+							return o.id == fattyAcid.id;
+						})
+
+						component.percentage = fattyAcid.percentage;
+						currentOilMolarQuantity = currentOilMolarQuantity + calculateLyeQuantityForSingleFattyAcid(component, item);
 					});
 					console.log('3. '+currentOilMolarQuantity.toFixed(5))
 					console.log('4. '+currentNaOHQuantity.toFixed(5))
 
-					currentNaOHQuantity = currentNaOHQuantity + currentOilMolarQuantity * Constants.NAOH_MOLARM_ASS;
+					currentNaOHQuantity = currentNaOHQuantity + currentOilMolarQuantity * Constants.NAOH_MOLARM_ASS; // Fixme Why not * 3 ???
 				});
 					console.log('4. '+currentNaOHQuantity.toFixed(5))
 
@@ -90,7 +99,18 @@
 		}
 
 		var calculateSuperFat = function(){
-			vm.calculatedNaOHQuantity =  (100 - vm.superFat) * vm.calculatedNaOHQuantity/100;			
+			vm.calculatedNaOHQuantity =  (100 - vm.superFat) * vm.calculatedNaOHQuantity / 100;			
+		}
+
+		var calculateLyeQuantityForSingleFattyAcid = function(component, item){
+
+			var result = 0;
+			console.log('1. '+result.toFixed(5))
+			result = item.quantity * component.percentage / (component.molarMass * 100);	
+			console.log('2. '+result.toFixed(5))
+			console.log (component)
+			console.log(component.name + ' : '+ item.quantity * component.percentage / (component.molarMass * 100))
+			return result;			
 		}
 	}
 

@@ -1,0 +1,33 @@
+[
+	{
+		"id" : 1,
+		"name" : "Lauric acid",
+		"formula" : "C4H802",
+		"molarMass" : 200.32
+	},{
+		"id" : 2,
+		"name" : "Myristic acid",
+		"formula" : "C4H802",
+		"molarMass" : 228.38
+	},{
+		"id" : 3,
+		"name" : "Palmitic acid",
+		"formula" : "C4H802",
+		"molarMass" : 256.43
+	},{
+		"id" : 4,
+		"name" : "Decanoic acid",
+		"formula" : "C4H802",
+		"molarMass" : 172.27
+	},{
+		"id" : 5,
+		"name" : "Caprylic acid",
+		"formula" : "C4H802",
+		"molarMass" : 144.21
+	},{
+		"id" : 6,
+		"name" : "Oleic acid",
+		"formula" : "C4H802",
+		"molarMass" : 282.47
+	}
+]

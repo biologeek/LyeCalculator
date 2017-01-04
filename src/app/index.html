@@ -39,14 +39,16 @@
 					<div class="panel-body">
 						Choose your oils :
 
-						<div class="row" ng-repeat="oil in idxController.selectedOils">
-							<div class="col-md-6">
-								{{oil.name}}
-							</div>
-							<div class="col-md-6">
-								<input type="text" ng-model="oil.quantity" />
-							</div>
-						</div>
+						<table class="table table-striped">
+							<tr ng-repeat="oil in idxController.selectedOils track by $index">
+								<td class="col-md-6">
+									{{oil.name}}
+								</td>
+								<td class="col-md-6">
+									<input type="text" ng-model="oil.quantity" />
+								</td>
+							</tr>
+						</table>
 
 						<div class="row">
 							<div class="col-lg-4">

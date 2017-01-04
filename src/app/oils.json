@@ -5,36 +5,30 @@
 		"description" : "blabla",
 		"composition" : [
 			{
-				"name" : "Lauric acid",
-				"formula" : "C4H802",
-				"molarMass" : 200.32,
+				"id" : 1,
 				"percentage" : 49
+
 			},{
-				"name" : "Myristic acid",
-				"formula" : "C4H802",
-				"molarMass" : 228.38,
+				"id" : 2,
 				"percentage" : 17
+
 			},{
-				"name" : "Palmitic acid",
-				"formula" : "C4H802",
-				"molarMass" : 256.43,
+				"id" : 3,
 				"percentage" : 10.5
+
 			},{
-				"name" : "Decanoic acid",
-				"formula" : "C4H802",
-				"molarMass" : 172.27,
+				"id" : 4,
 				"percentage" : 9
+
 			},{
-				"name" : "Caprylic acid",
-				"formula" : "C4H802",
-				"molarMass" : 144.21,
+				"id" : 5,
 				"percentage" : 7.5
+
 			},{
-				"name" : "Oleic acid",
-				"formula" : "C4H802",
-				"molarMass" : 282.47,
+				"id" : 6,
 				"percentage" : 7
-			}
+
+			}	
 		]
 	}
 

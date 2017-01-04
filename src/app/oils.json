@@ -2,7 +2,40 @@
 	{
 		"id" : 1,
 		"name" : "Coconut oil",
-		"description" : "blabla"
+		"description" : "blabla",
+		"composition" : [
+			{
+				"name" : "Lauric acid",
+				"formula" : "C4H802",
+				"molarMass" : 200.32,
+				"percentage" : 49
+			},{
+				"name" : "Myristic acid",
+				"formula" : "C4H802",
+				"molarMass" : 228.38,
+				"percentage" : 17
+			},{
+				"name" : "Palmitic acid",
+				"formula" : "C4H802",
+				"molarMass" : 256.43,
+				"percentage" : 10.5
+			},{
+				"name" : "Decanoic acid",
+				"formula" : "C4H802",
+				"molarMass" : 172.27,
+				"percentage" : 9
+			},{
+				"name" : "Caprylic acid",
+				"formula" : "C4H802",
+				"molarMass" : 144.21,
+				"percentage" : 7.5
+			},{
+				"name" : "Oleic acid",
+				"formula" : "C4H802",
+				"molarMass" : 282.47,
+				"percentage" : 7
+			}
+		]
 	}
 
 ]

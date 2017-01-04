@@ -12,7 +12,8 @@
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/sb-admin-2.min.css">
 
-	<script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+	<script type="text/javascript" src="vendors/lodash/dist/lodash.min.js"></script>
+	<script type="text/javascript" src="vendors/angular/angular.js"></script>
 	<script type="text/javascript" src="vendors/angular-sanitize/angular-sanitize.min.js"></script>
 	<script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-ui-select/dist/select.min.js"></script>
@@ -21,6 +22,7 @@
 
 	<script type="text/javascript" src="js/theme/sb-admin-2.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/constants.js"></script>
 	<script type="text/javascript" src="js/calculator.service.js"></script>
 	<script type="text/javascript" src="index.controller.js"></script>
 
@@ -29,7 +31,7 @@
 <div id="wrapper" ng-controller="IndexController as idxController">
 	<div id="page-wrapper">
 		<div class="row">
-			<div class="col-lg-4">
+			<div>
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						Recipe
@@ -38,38 +40,31 @@
 						Choose your oils :
 
 						<div class="row" ng-repeat="oil in idxController.selectedOils">
-							<div class="col-sm-4">
-								<select multiple class="form-control">
-									<option ng-repeat="oilInv for oilInv in idxController.oilsList" value="oil.id">
-										{{oilInv.name}}
-									</option>
-								</select>
+							<div class="col-md-6">
+								{{oil.name}}
 							</div>
-							<div class="col-sm-4">
-								<input type="text" />
-							</div>
-							<div class="col-sm-4">
-								<button ng-click="">Add</button>
+							<div class="col-md-6">
+								<input type="text" ng-model="oil.quantity" />
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="col-sm-4">
-								<select multiple class="form-control" ng-options="oilInv.name as oilInv.id for oilInv in idxController.oilsList track by oilInv.id" ng-model="currentOil.oil">
+							<div class="col-lg-4">
+								<select multiple class="form-control" ng-options="oilInv.id as oilInv.name for oilInv in idxController.oilsList" ng-model="idxController.currentOil">
 								</select>
-							</div>-
-							<div class="col-sm-4">
-								<input type="text" ng-model="currentOil.quantity" />
 							</div>
-							<div class="col-sm-4">
-								<button ng-click="">Add</button>
+							<div class="col-lg-4">
+								<input type="text" ng-model="idxController.currentOil.quantity" />
+							</div>
+							<div class="col-lg-4">
+								<button ng-click="idxController.addCurrentOil()">Add</button>
 							</div>
 						</div>
 
 
 					</div>
 					<div class="panel-footer">
-					<button type="submit">submit</button>
+					<button ng-click="idxController.calculateLyeQuantity()" >submit</button>
 					</div>
 				</div>
 			</div>
@@ -78,8 +73,11 @@
 		<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">
+				Report
+				</div>
 
-				bloublou
+				<div class="panel-body">
+					<h2>Lye quantity : {{idxController.calculatedNaOHQuantity}}</h2> 
 				</div>
 			</div>
 		</div>

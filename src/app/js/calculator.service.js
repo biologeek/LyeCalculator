@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('LyeCalculator').service('CalculatorService', CalculatorService);
+	angular.module('LyeCalculator').factory('CalculatorService', CalculatorService);
 
 
 

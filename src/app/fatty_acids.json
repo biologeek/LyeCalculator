@@ -29,5 +29,25 @@
 		"name" : "Oleic acid",
 		"formula" : "C4H802",
 		"molarMass" : 282.47
+	},{
+		"id" : 7,
+		"name" : "Stearic acid",
+		"formula" : "C4H802",
+		"molarMass" : 284,48
+	},{
+		"id" : 8,
+		"name" : "Ricinoleic acid",
+		"formula" : "C4H802",
+		"molarMass" : 298.461
+	},{
+		"id" : 9,
+		"name" : "Linoleic acid",
+		"formula" : "C4H802",
+		"molarMass" : 280.44
+	},{
+		"id" : 10,
+		"name" : "Linolenic acid",
+		"formula" : "C4H802",
+		"molarMass" : 278,43
 	}
 ]

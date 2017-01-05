@@ -1,0 +1,8 @@
+{
+	"param" : {
+		"buttons" : {
+			"submit" : "Calculate",
+			"reset" : "Clean"
+		} 
+	}, 
+}

@@ -15,6 +15,10 @@
 	<script type="text/javascript" src="vendors/lodash/dist/lodash.min.js"></script>
 	<script type="text/javascript" src="vendors/angular/angular.js"></script>
 	<script type="text/javascript" src="vendors/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="vendors/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
+	<script type="text/javascript" src="vendors/angular-i18n/angular-locale_en-us.js"></script>
+	 <script src="vendors/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+	<script type="text/javascript" src="vendors/angular-translate/angular-translate.min.js"></script>
 	<script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-ui-select/dist/select.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
@@ -37,28 +41,32 @@
 						Recipe
 					</div>
 					<div class="panel-body">
-						Choose your oils :
+						<h2>Choose your oils :</h2>
 
 						<table class="table table-striped">
-							<tr ng-repeat="oil in idxController.selectedOils track by $index">
+							<tr ng-repeat="oil in idxController.recipe.selectedOils track by $index">
 								<td class="col-md-6">
 									{{oil.name}}
 								</td>
 								<td class="col-md-6">
 									<input type="text" ng-model="oil.quantity" />
 								</td>
+							<td class="col-md-6 pull-right">
+								<button class="btn btn-danger glyphicon glyphicon-remove pull-right" ng-click="idxController.removeOil(oil)">
+							</td>
 							</tr>
 						</table>
 
+
 						<div class="row">
-							<div class="col-lg-4">
-								<select multiple class="form-control" ng-options="oilInv.id as oilInv.name for oilInv in idxController.oilsList" ng-model="idxController.currentOil">
+							<div class="col-md-6">
+								<select multiple class="form-control" ng-options="oilInv.id as oilInv.name for oilInv in idxController.oilsList" ng-model="idxController.currentOil" style="height : 200px">
 								</select>
 							</div>
-							<div class="col-lg-4">
-								<input type="text" ng-model="idxController.currentOil.quantity" />
+							<div class="col-md-3">
+								<input type="text" ng-model="idxController.currentOil.quantity" /> g
 							</div>
-							<div class="col-lg-4">
+							<div class="col-md-3 pull-right">
 								<button ng-click="idxController.addCurrentOil()">Add</button>
 							</div>
 						</div>
@@ -66,22 +74,56 @@
 
 					</div>
 					<div class="panel-footer">
-					<button ng-click="idxController.calculateLyeQuantity()" >submit</button>
+						<button ng-click="idxController.calculateLyeQuantity()" >{{params.buttons.submit}}</button>
+						<button ng-click="idxController.resetForm()">Reset</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="panel panel-default">
+			<div class="{{idxController.resultClass}}" id="result-panel">
 				<div class="panel-heading">
 				Report
 				</div>
 
 				<div class="panel-body">
-					<h2>Lye quantity : {{idxController.calculatedNaOHQuantity}}</h2> 
+					<table class="table table-striped">
+						<tr>
+							<td>Lye</td>
+							<td>{{idxController.recipe.calculatedNaOHQuantity}} g</td>
+						</tr>
+						<tr>
+							<td>Oils</td>
+							<td>{{idxController.computeOilQuantity()}} g</td>
+						</tr>
+						<tr>
+							<td>Water</td>
+							<td>{{idxController.recipe.waterQuantity}} g</td>
+						</tr>
+						<tr>
+							<td>Essential oils</td>
+							<td>{{idxController.recipe.essentialOils}} g</td>
+						</tr>
+					</table>
 				</div>
 			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 </div>

@@ -4,7 +4,9 @@
 	var app = angular.module('LyeCalculator', [
 		'ngSanitize',
 		'ui.select',
-		'ui-notification'
+		'ui-notification',
+        'pascalprecht.translate',// angular-translate
+        'tmh.dynamicLocale'// angular-dynamic-locale
 		]);
 
 
@@ -25,4 +27,17 @@
         $httpProvider.defaults.useXDomain = true;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
     });
+
+    app.config(function ($translateProvider) {
+        $translateProvider.useStaticFilesLoader({
+            prefix: 'i18n/',// path to translations files
+            suffix: '.json'// suffix, currently- extension of the translations
+        });
+        $translateProvider.preferredLanguage('en_US');// is applied on first load
+        $translateProvider.useLocalStorage();// saves selected language to localStorage
+    })
+
+    app.config(function (tmhDynamicLocaleProvider) {
+        tmhDynamicLocaleProvider.localeLocationPattern('vendors/angular-i18n/angular-locale_{{locale}}.js');
+    })
 })();

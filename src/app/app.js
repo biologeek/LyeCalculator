@@ -7,11 +7,9 @@
 		'ui-notification',
         'pascalprecht.translate',// angular-translate
         'tmh.dynamicLocale'// angular-dynamic-locale
-		]);
+	]);
 
-
-
-	 app.config(function(NotificationProvider) {
+	app.config(function(NotificationProvider) {
         NotificationProvider.setOptions({
             delay: 5000,
             startTop: 20,
@@ -35,9 +33,11 @@
         });
         $translateProvider.preferredLanguage('en_US');// is applied on first load
         $translateProvider.useLocalStorage();// saves selected language to localStorage
-    })
+        $translateProvider.useMissingTranslationHandlerLog();
+
+    });
 
     app.config(function (tmhDynamicLocaleProvider) {
         tmhDynamicLocaleProvider.localeLocationPattern('vendors/angular-i18n/angular-locale_{{locale}}.js');
-    })
+    });
 })();

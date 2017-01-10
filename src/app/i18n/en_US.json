@@ -1,8 +1,19 @@
 {
-	"param" : {
+	"params" : {
+		"title": "Choose your oils",
 		"buttons" : {
 			"submit" : "Calculate",
-			"reset" : "Clean"
+			"reset" : "Clean",
+			"add.oil" : "Add"
 		} 
-	}, 
+	},
+	"report" : {
+		"table" : {
+			"lye" : "Lye",
+			"oil" : "Oil",
+			"water" : "Water",
+			"fragrance" : "Fragrance"
+
+		}
+	}
 }

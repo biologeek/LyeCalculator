@@ -3,6 +3,7 @@
 
 	var app = angular.module('LyeCalculator', [
 		'ngSanitize',
+        'ngCookies',
 		'ui.select',
 		'ui-notification',
         'pascalprecht.translate',// angular-translate

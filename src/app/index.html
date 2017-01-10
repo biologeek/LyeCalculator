@@ -16,8 +16,11 @@
 	<script type="text/javascript" src="vendors/angular/angular.js"></script>
 	<script type="text/javascript" src="vendors/angular-translate/angular-translate.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="vendors/angular-cookies/angular-cookies.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-i18n/angular-locale_en-us.js"></script>
+	<script src="vendors/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+	<script src="vendors/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
 	<script src="vendors/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
 	<script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-ui-select/dist/select.min.js"></script>
@@ -41,7 +44,7 @@
 						Recipe
 					</div>
 					<div class="panel-body">
-						<h2>Choose your oils :</h2>
+						<h2>{{"params.title" | translate}}</h2>
 
 						<table class="table table-striped">
 							<tr ng-repeat="oil in idxController.recipe.selectedOils track by $index">
@@ -67,15 +70,15 @@
 								<input type="text" ng-model="idxController.currentOil.quantity" /> g
 							</div>
 							<div class="col-md-3 pull-right">
-								<button ng-click="idxController.addCurrentOil()">Add</button>
+								<button ng-click="idxController.addCurrentOil()">{{"params.buttons.add.oil" | translate}}</button>
 							</div>
 						</div>
 
 
 					</div>
 					<div class="panel-footer">
-						<button ng-click="idxController.calculateLyeQuantity()" >{{params.buttons.submit}}</button>
-						<button ng-click="idxController.resetForm()">Reset</button>
+						<button ng-click="idxController.calculateLyeQuantity()" >{{"params.buttons.submit" | translate}}</button>
+						<button ng-click="idxController.resetForm()">{{"params.buttons.reset" | translate}}</button>
 					</div>
 				</div>
 			</div>
@@ -90,19 +93,19 @@
 				<div class="panel-body">
 					<table class="table table-striped">
 						<tr>
-							<td>Lye</td>
+							<td>{{"report.table.lye" | translate}}</td>
 							<td>{{idxController.recipe.calculatedNaOHQuantity}} g</td>
 						</tr>
 						<tr>
-							<td>Oils</td>
+							<td>{{"report.table.oil" | translate}}</td>
 							<td>{{idxController.computeOilQuantity()}} g</td>
 						</tr>
 						<tr>
-							<td>Water</td>
+							<td>{{"report.table.water" | translate}}</td>
 							<td>{{idxController.recipe.waterQuantity}} g</td>
 						</tr>
 						<tr>
-							<td>Essential oils</td>
+							<td>{{"report.table.fragrance" | translate}}</td>
 							<td>{{idxController.recipe.essentialOils}} g</td>
 						</tr>
 					</table>

@@ -1,11 +1,16 @@
 {
 	"params" : {
-		"title": "Choose your oils",
+		"heading" : "Oils mix",
 		"buttons" : {
 			"submit" : "Calculate",
 			"reset" : "Clean",
 			"add.oil" : "Add"
-		} 
+		},
+		"labels" : {
+			"overfat" : "Overfat",
+			"fragrance.percentage" : "Fragrance percentage",
+			"water.percentage" : "Water percentage"
+		}
 	},
 	"report" : {
 		"table" : {

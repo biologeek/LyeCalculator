@@ -41,10 +41,10 @@
 			<div>
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Recipe
+						{{"params.heading" | translate}}
 					</div>
 					<div class="panel-body">
-						<h2>{{"params.title" | translate}}</h2>
+
 
 						<table class="table table-striped">
 							<tr ng-repeat="oil in idxController.recipe.selectedOils track by $index">
@@ -59,10 +59,17 @@
 							</td>
 							</tr>
 						</table>
-
+						<div class="row">
+							<div class="col-md-4">
+								1- Choose the oil
+							</div>
+							<div class="col-md-3">
+								2- ...and the quantity
+							</div>
+						</div>
 
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-4">
 								<select multiple class="form-control" ng-options="oilInv.id as oilInv.name for oilInv in idxController.oilsList" ng-model="idxController.currentOil" style="height : 200px">
 								</select>
 							</div>
@@ -73,17 +80,61 @@
 								<button ng-click="idxController.addCurrentOil()">{{"params.buttons.add.oil" | translate}}</button>
 							</div>
 						</div>
-
-
 					</div>
 					<div class="panel-footer">
-						<button ng-click="idxController.calculateLyeQuantity()" >{{"params.buttons.submit" | translate}}</button>
-						<button ng-click="idxController.resetForm()">{{"params.buttons.reset" | translate}}</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Parameters
+					</div>
+					<div class="panel-body">
+						<div class="panel panel-default">
+							<div class="panel-body">
+							<i> 
+								Overfat ensures you get a neutral pH at the end of the process. It must be within 5 to 9% overfat
+							</i> 
 
+
+							</div>
+						</div>
+						<table class="table table-striped">
+							<tr>
+								<td class="col-md-3">
+									{{"params.labels.overfat" | translate}}
+								</td>
+								<td class="col-md-2">
+									<input type="text" size="5" name="overfat" ng-model="idxController.recipe.superFat" /> %
+								</td>
+								<td  class="col-md-3">
+									{{"params.labels.fragrance.percentage" | translate}}
+								</td>
+								<td class="col-md-2">
+									<input type="text" size="5" name="fragrance" ng-model="idxController.recipe.fragrance.percentage"> %
+								</td>
+							</tr>
+							<tr>
+								<td class="col-md-3">
+									{{"params.labels.water.percentage" | translate}}
+								</td>
+								<td class="col-md-2">
+									<input type="text" size="5" name="water" ng-model="idxController.recipe.water.percentage"> %
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="panel-footer">
+						<button class="btn btn-outline btn-primary" ng-click="idxController.calculateLyeQuantity()" >{{"params.buttons.submit" | translate}}</button>
+						<button class="btn btn-outline btn-danger" ng-click="idxController.resetForm()">{{"params.buttons.reset" | translate}}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+						
 		<div class="row">
 			<div class="{{idxController.resultClass}}" id="result-panel">
 				<div class="panel-heading">

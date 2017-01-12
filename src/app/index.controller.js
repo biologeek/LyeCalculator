@@ -15,7 +15,8 @@
 		vm.recipe = {};
 		vm.recipe.selectedOils=[];
 		vm.recipe.calculatedNaOHQuantity = '--'
-		vm.recipe.waterPercentage = 38
+		vm.recipe.water = {};
+		vm.recipe.water.percentage = 38
 		vm.recipe.waterQuantity = 0;
 		vm.resultClass = Constants.PANEL_DEFAULT;
 		/**
@@ -115,7 +116,7 @@
 			vm.recipe = {};
 			vm.recipe.selectedOils=[];
 			vm.recipe.calculatedNaOHQuantity = '--'
-			vm.recipe.waterPercentage = 38
+			vm.recipe.water.percentage = 38
 			vm.recipe.waterQuantity = 0;
 			vm.resultClass = Constants.PANEL_DEFAULT;
 
@@ -145,7 +146,7 @@
 		}
 
 		var calculateWaterContent = function(){
-			vm.recipe.waterQuantity = vm.recipe.waterPercentage * vm.computeOilQuantity() / 100;
+			vm.recipe.waterQuantity = vm.recipe.water.percentage * vm.computeOilQuantity() / 100;
 		}
 
 		var switchToResult = function(){

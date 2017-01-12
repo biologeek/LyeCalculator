@@ -47,6 +47,17 @@
 
 
 						<table class="table table-striped">
+							<tr>
+								<th class="col-md-6">
+									{{"params.labels.table.oil" | translate}}
+								</th>
+								<th class="col-md-6">
+									{{"params.labels.table.quantity" | translate}}
+								</th>
+								<th class="col-md-6">
+									{{"params.labels.table.remove" | translate}}
+								</th>
+							</tr>
 							<tr ng-repeat="oil in idxController.recipe.selectedOils track by $index">
 								<td class="col-md-6">
 									{{oil.name}}
@@ -54,17 +65,17 @@
 								<td class="col-md-6">
 									<input type="text" ng-model="oil.quantity" />
 								</td>
-							<td class="col-md-6 pull-right">
-								<button class="btn btn-danger glyphicon glyphicon-remove pull-right" ng-click="idxController.removeOil(oil)">
-							</td>
+								<td class="col-md-6 pull-right">
+									<button class="btn btn-danger glyphicon glyphicon-remove pull-right" ng-click="idxController.removeOil(oil)">
+								</td>
 							</tr>
 						</table>
 						<div class="row">
 							<div class="col-md-4">
-								1- Choose the oil
+								1- {{"params.labels.choose.oil" | translate}} 
 							</div>
 							<div class="col-md-3">
-								2- ...and the quantity
+								2- {{"params.labels.choose.quantity" | translate}} 
 							</div>
 						</div>
 
@@ -96,10 +107,10 @@
 						<div class="panel panel-default">
 							<div class="panel-body">
 							<i> 
-								Overfat ensures you get a neutral pH at the end of the process. It must be within 5 to 9% overfat
-							</i> 
-
-
+								{{"params.info.overfat" | translate}} 
+								<br><br>
+								{{"params.info.fragrance" | translate}} 								
+							</i>
 							</div>
 						</div>
 						<table class="table table-striped">

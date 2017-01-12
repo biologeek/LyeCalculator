@@ -9,7 +9,18 @@
 		"labels" : {
 			"overfat" : "Overfat",
 			"fragrance.percentage" : "Fragrance percentage",
-			"water.percentage" : "Water percentage"
+			"water.percentage" : "Water percentage",
+			"choose.oil" : "Choose the oil",
+			"choose.quantity" : "...and the quantity",
+			"table" : {
+				"oil" : "Oil name",
+				"quantity" : "Quantity",
+				"remove" : "Remove"
+			}
+		},
+		"info" : {
+			"overfat" : "Overfat ensures you get a neutral pH at the end of the process. It must be within 5 to 9% overfat.",
+			"fragrance" :"Soap contains generally around 1-2% fragrances. Too much fragrance could harm your skin."
 		}
 	},
 	"report" : {

@@ -32,7 +32,7 @@
             prefix: 'i18n/',// path to translations files
             suffix: '.json'// suffix, currently- extension of the translations
         });
-        $translateProvider.preferredLanguage('en_US');// is applied on first load
+        $translateProvider.preferredLanguage('fr_FR');// is applied on first load
         $translateProvider.useLocalStorage();// saves selected language to localStorage
         $translateProvider.useMissingTranslationHandlerLog();
 

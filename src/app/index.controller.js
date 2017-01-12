@@ -19,6 +19,9 @@
 		vm.recipe.water.percentage = 38
 		vm.recipe.waterQuantity = 0;
 		vm.resultClass = Constants.PANEL_DEFAULT;
+
+		vm.recipe.fragrance={};
+		vm.recipe.fragrance.percentage=2;
 		/**
 		 * Stores available oils list
 		 */
@@ -93,12 +96,12 @@
 						})
 
 						component.percentage = fattyAcid.percentage;
-						currentOilMolarQuantity = currentOilMolarQuantity + calculateLyeQuantityForSingleFattyAcid(component, item);
+						currentOilMolarQuantity = currentOilMolarQuantity + calculateMolarQuantityForSingleFattyAcid(component, item);
 					});
 					//console.log('3. '+currentOilMolarQuantity.toFixed(5))
 					//console.log('4. '+currentNaOHQuantity.toFixed(5))
 
-					currentNaOHQuantity = currentNaOHQuantity + currentOilMolarQuantity * Constants.NAOH_MOLARM_ASS; // Fixme Why not * 3 ???
+					currentNaOHQuantity = currentNaOHQuantity + 3 * currentOilMolarQuantity * Constants.NAOH_MOLARM_ASS; // Fixme Why not * 3 ???
 				});
 					//console.log('4. '+currentNaOHQuantity.toFixed(5))
 
@@ -134,11 +137,11 @@
 			vm.calculatedNaOHQuantity =  (100 - vm.superFat) * vm.calculatedNaOHQuantity / 100;			
 		}
 
-		var calculateLyeQuantityForSingleFattyAcid = function(component, item){
+		var calculateMolarQuantityForSingleFattyAcid = function(component, item){
 
 			var result = 0;
 			//console.log('1. '+result.toFixed(5))
-			result = item.quantity * component.percentage / (component.molarMass * 100);	
+			result = item.quantity * component.percentage / (toTriglyceride(component.molarMass) * 100);	
 			//console.log('2. '+result.toFixed(5))
 			//console.log (component)
 			//console.log(component.name + ' : '+ item.quantity * component.percentage / (component.molarMass * 100))
@@ -157,6 +160,11 @@
 			$location.hash('result-panel');
 			$anchorScroll();
 
+		}
+
+		var toTriglyceride = function(singleFattyAcidMolarMass){
+			console.log(singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS);
+			return singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS;
 		}
 	}
 })();

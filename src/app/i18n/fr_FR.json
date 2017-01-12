@@ -1,0 +1,37 @@
+{
+	"params" : {
+		"title" : "Paramètres", 
+		"heading" : "Mélange d'huiles",
+		"buttons" : {
+			"submit" : "Calculer",
+			"reset" : "Effacer",
+			"add.oil" : "Ajouter"
+		},
+		"labels" : {
+			"overfat" : "Surgras",
+			"fragrance.percentage" : "Pourcentage d'HE",
+			"water.percentage" : "Pourcentage d'eau",
+			"choose.oil" : "Choisissez l'huile",
+			"choose.quantity" : "...et la quantité",
+			"table" : {
+				"oil" : "Huile",
+				"quantity" : "Quantité",
+				"remove" : "Supprimer"
+			}
+		},
+		"info" : {
+			"overfat" : "Le surgras assure que le savon sera neutre à la fin de la fabrication. Surgras moyen : 5 à 9 %",
+			"fragrance" :"Le savon doit contenir environ 1-2% d'huiles essentielles. Attention, trop d'huiles essentielles peut être dangereux pour la peau !"
+		}
+	},
+	"report" : {
+		"title" : "Rapport",
+		"table" : {
+			"lye" : "Soude",
+			"oil" : "Huile",
+			"water" : "Eau",
+			"fragrance" : "Huiles essentielles"
+
+		}
+	}
+}

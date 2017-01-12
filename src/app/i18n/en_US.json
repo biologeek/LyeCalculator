@@ -1,5 +1,6 @@
 {
 	"params" : {
+		"title" : "Parameters", 
 		"heading" : "Oils mix",
 		"buttons" : {
 			"submit" : "Calculate",

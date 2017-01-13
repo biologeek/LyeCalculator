@@ -20,6 +20,7 @@
 	<script type="text/javascript" src="vendors/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
 	<script type="text/javascript" src="vendors/angular-i18n/angular-locale_en-us.js"></script>
 	<script src="vendors/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+	<script src="vendors/angular-translate-handler-log/angular-translate-handler-log.min.js"></script>
 	<script src="vendors/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
 	<script src="vendors/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
 	<script type="text/javascript" src="vendors/jquery/dist/jquery.min.js"></script>
@@ -45,7 +46,11 @@
 					</div>
 					<div class="panel-body">
 
-
+						{{"params.introduction" | translate}}
+						<br /><br />
+						{{"params.beware" | translate}}
+						<br />
+						<br />
 						<table class="table table-striped">
 							<tr>
 								<th class="col-md-6">

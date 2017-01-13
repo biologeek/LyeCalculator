@@ -5,10 +5,10 @@
 
 
 
-	IndexController.$inject = ['$scope', 'Notification', 'CalculatorService', 'Constants', '$location', '$anchorScroll', '$animate'];
+	IndexController.$inject = ['$scope', 'Notification', 'CalculatorService', 'Constants', '$location', '$anchorScroll', '$animate', '$translate'];
 
 
-	function IndexController($scope, Notification, CalculatorService, Constants, $location, $anchorScroll, $animate){
+	function IndexController($scope, Notification, CalculatorService, Constants, $location, $anchorScroll, $animate, $translate){
 
 		var vm = this;
 
@@ -36,6 +36,8 @@
 		 */
 		vm.recipe.superFat = 5;	
 
+
+
 		CalculatorService.getOilsInventory(function(data){
 			vm.oilsList = data;
 		}, function(data){});
@@ -62,6 +64,9 @@
 		}
 
 
+		/**
+		 * 
+		 */
 		vm.computeOilQuantity = function(){
 			var total = 0;
 

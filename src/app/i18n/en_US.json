@@ -1,6 +1,8 @@
 {
 	"params" : {
 		"title" : "Parameters", 
+		"introduction" : "This calculator allows you to create your mix of oils and fats and automatically calculate necesary lye and fragrance quantities.",
+		"beware" : "Please wear gloves and protection glasses when you manipulate lye and fresh soap ! Skin contact could harm your skin",
 		"heading" : "Oils mix",
 		"buttons" : {
 			"submit" : "Calculate",
@@ -25,6 +27,7 @@
 		}
 	},
 	"report" : {
+		"title" : "Report",
 		"table" : {
 			"lye" : "Lye",
 			"oil" : "Oil",

@@ -1,6 +1,8 @@
 {
 	"params" : {
 		"title" : "Paramètres", 
+		"introduction" : "This calculator allows you to create your mix of oils and fats and automatically calculate ",
+		"beware" : "N'oubliez pas de porter des gants et lunettes de protection quand vous manipulez la soude et le savon frais ! Les manipuler à mains nues peut endommager votre peau",
 		"heading" : "Mélange d'huiles",
 		"buttons" : {
 			"submit" : "Calculer",

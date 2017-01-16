@@ -64,8 +64,12 @@ gulp.task('minify-js', ['js'], function() {
 gulp.task('copy', function() {
     gulp.src(['app/vendors/**', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('dist/vendors/'))
+    gulp.src(['app/i18n/**'])
+        .pipe(gulp.dest('dist/i18n/'))
     gulp.src(['app/css/**'])
         .pipe(gulp.dest('dist/css/'))
+    gulp.src(['app/*.js*'])
+        .pipe(gulp.dest('dist/'))
     gulp.src(['app/js/**/*.js'])
         .pipe(gulp.dest('dist/js/'))
     gulp.src(['app/**/*.html'])

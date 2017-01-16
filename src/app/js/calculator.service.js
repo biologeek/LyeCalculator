@@ -14,7 +14,7 @@
 		Factory.getOilsInventory = function(callbackSuccess, callbackError){
 			var promise = $http({
 				method : 'GET',
-				url : '/oils.json'
+				url : 'oils.json'
 			}).then(function(response){
 				//console.log(response)
 				callbackSuccess(response.data);
@@ -27,7 +27,7 @@
 		Factory.getFattyAcids = function(callbackSuccess, callbackError){
 			var promise = $http({
 				method : 'GET',
-				url : '/fatty_acids.json'
+				url : 'fatty_acids.json'
 			}).then(function(response){
 				//console.log(response)
 				callbackSuccess(response.data);

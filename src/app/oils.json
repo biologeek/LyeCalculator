@@ -51,36 +51,7 @@
 				"percentage": 0
 			}
 		]
-	}, {
-		"id": 3,
-		"name": "Almond Oil, sweet",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 7
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 71
-			}, {
-				"id": 9,
-				"percentage": 18
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
+	},  {
 		"id": 4,
 		"name": "Aloe Butter",
 		"composition": [{
@@ -110,37 +81,8 @@
 			}
 		]
 	}, {
-		"id": 5,
-		"name": "Andiroba Oil,karaba,crabwood",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 28
-			}, {
-				"id": 7,
-				"percentage": 8
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 51
-			}, {
-				"id": 9,
-				"percentage": 9
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 6,
-		"name": "Apricot Kernal Oil",
+		"name": "Apricot Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -255,35 +197,6 @@
 			}
 		]
 	}, {
-		"id": 10,
-		"name": "Babassu Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 50
-			}, {
-				"id": 2,
-				"percentage": 20
-			}, {
-				"id": 3,
-				"percentage": 11
-			}, {
-				"id": 7,
-				"percentage": 4
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 10
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 11,
 		"name": "Baobab Oil",
 		"composition": [{
@@ -310,64 +223,6 @@
 			}, {
 				"id": 10,
 				"percentage": 2
-			}
-		]
-	}, {
-		"id": 12,
-		"name": "Beeswax",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 13,
-		"name": "Black Cumin Seed Oil, nigella sativa",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 13
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 22
-			}, {
-				"id": 9,
-				"percentage": 60
-			}, {
-				"id": 10,
-				"percentage": 1
 			}
 		]
 	}, {
@@ -458,35 +313,6 @@
 			}
 		]
 	}, {
-		"id": 17,
-		"name": "Broccoli Seed Oil, Brassica Oleracea",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 3
-			}, {
-				"id": 7,
-				"percentage": 1
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 14
-			}, {
-				"id": 9,
-				"percentage": 11
-			}, {
-				"id": 10,
-				"percentage": 9
-			}
-		]
-	}, {
 		"id": 18,
 		"name": "Buriti Oil",
 		"composition": [{
@@ -542,64 +368,6 @@
 			}, {
 				"id": 10,
 				"percentage": 45
-			}
-		]
-	}, {
-		"id": 20,
-		"name": "Camellia Oil, Tea Seed",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 9
-			}, {
-				"id": 7,
-				"percentage": 2
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 77
-			}, {
-				"id": 9,
-				"percentage": 8
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 21,
-		"name": "Candelilla Wax",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
 			}
 		]
 	}, {
@@ -662,7 +430,7 @@
 		]
 	}, {
 		"id": 24,
-		"name": "Carrot Seed Oil, cold pressed",
+		"name": "Carrot Seed Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -713,64 +481,6 @@
 			}, {
 				"id": 9,
 				"percentage": 4
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 26,
-		"name": "Cherry Kern1 Oil, p. avium",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 8
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 31
-			}, {
-				"id": 9,
-				"percentage": 45
-			}, {
-				"id": 10,
-				"percentage": 11
-			}
-		]
-	}, {
-		"id": 27,
-		"name": "Cherry Kern2 Oil, p. cerasus",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 50
-			}, {
-				"id": 9,
-				"percentage": 40
 			}, {
 				"id": 10,
 				"percentage": 0
@@ -835,37 +545,8 @@
 			}
 		]
 	}, {
-		"id": 30,
-		"name": "Coconut Oil, 76 deg",
-		"composition": [{
-				"id": 1,
-				"percentage": 48
-			}, {
-				"id": 2,
-				"percentage": 19
-			}, {
-				"id": 3,
-				"percentage": 9
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 8
-			}, {
-				"id": 9,
-				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 31,
-		"name": "Coconut Oil, 92 deg",
+		"name": "Coconut Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 48
@@ -887,35 +568,6 @@
 			}, {
 				"id": 9,
 				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 32,
-		"name": "Coconut Oil, fractionated",
-		"composition": [{
-				"id": 1,
-				"percentage": 2
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
 			}, {
 				"id": 10,
 				"percentage": 0
@@ -1096,122 +748,6 @@
 			}
 		]
 	}, {
-		"id": 39,
-		"name": "Crisco, new w/palm",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 20
-			}, {
-				"id": 7,
-				"percentage": 5
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 28
-			}, {
-				"id": 9,
-				"percentage": 40
-			}, {
-				"id": 10,
-				"percentage": 6
-			}
-		]
-	}, {
-		"id": 40,
-		"name": "Crisco, old",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 13
-			}, {
-				"id": 7,
-				"percentage": 13
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 18
-			}, {
-				"id": 9,
-				"percentage": 52
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 41,
-		"name": "Cupuacu Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 8
-			}, {
-				"id": 7,
-				"percentage": 35
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 42
-			}, {
-				"id": 9,
-				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 42,
-		"name": "Duck Fat, flesh and skin",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 26
-			}, {
-				"id": 7,
-				"percentage": 9
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 44
-			}, {
-				"id": 9,
-				"percentage": 13
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
 		"id": 43,
 		"name": "Emu Oil",
 		"composition": [{
@@ -1296,64 +832,6 @@
 			}, {
 				"id": 10,
 				"percentage": 50
-			}
-		]
-	}, {
-		"id": 46,
-		"name": "Ghee, any bovine",
-		"composition": [{
-				"id": 1,
-				"percentage": 4
-			}, {
-				"id": 2,
-				"percentage": 11
-			}, {
-				"id": 3,
-				"percentage": 28
-			}, {
-				"id": 7,
-				"percentage": 12
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 19
-			}, {
-				"id": 9,
-				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 47,
-		"name": "Goose Fat",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 21
-			}, {
-				"id": 7,
-				"percentage": 6
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 54
-			}, {
-				"id": 9,
-				"percentage": 10
-			}, {
-				"id": 10,
-				"percentage": 0
 			}
 		]
 	}, {
@@ -1502,64 +980,6 @@
 			}
 		]
 	}, {
-		"id": 53,
-		"name": "Japan Wax",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 80
-			}, {
-				"id": 7,
-				"percentage": 7
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 4
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 54,
-		"name": "Jatropha Oil, soapnut seed oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 9
-			}, {
-				"id": 7,
-				"percentage": 7
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 44
-			}, {
-				"id": 9,
-				"percentage": 34
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 55,
 		"name": "Jojoba Oil (a Liquid Wax Ester)",
 		"composition": [{
@@ -1618,93 +1038,6 @@
 			}
 		]
 	}, {
-		"id": 57,
-		"name": "Kokum Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 4
-			}, {
-				"id": 7,
-				"percentage": 56
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 36
-			}, {
-				"id": 9,
-				"percentage": 1
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 58,
-		"name": "Kpangnan Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 44
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 49
-			}, {
-				"id": 9,
-				"percentage": 1
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 59,
-		"name": "Kukui nut Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 2
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 20
-			}, {
-				"id": 9,
-				"percentage": 42
-			}, {
-				"id": 10,
-				"percentage": 29
-			}
-		]
-	}, {
 		"id": 60,
 		"name": "Lanolin liquid Wax",
 		"composition": [{
@@ -1728,35 +1061,6 @@
 			}, {
 				"id": 9,
 				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 61,
-		"name": "Lard, Pig Tallow (Manteca)",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 28
-			}, {
-				"id": 7,
-				"percentage": 13
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 46
-			}, {
-				"id": 9,
-				"percentage": 6
 			}, {
 				"id": 10,
 				"percentage": 0
@@ -1850,35 +1154,6 @@
 			}
 		]
 	}, {
-		"id": 65,
-		"name": "Loofa Seed Oil, Luffa cylinderica",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 9
-			}, {
-				"id": 7,
-				"percentage": 18
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 30
-			}, {
-				"id": 9,
-				"percentage": 47
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 66,
 		"name": "Macadamia Nut Butter",
 		"composition": [{
@@ -1931,64 +1206,6 @@
 			}, {
 				"id": 9,
 				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 68,
-		"name": "Mafura Butter, Trichilia emetica ",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 37
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 49
-			}, {
-				"id": 9,
-				"percentage": 11
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 69,
-		"name": "Mango Seed Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 7
-			}, {
-				"id": 7,
-				"percentage": 42
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 45
-			}, {
-				"id": 9,
-				"percentage": 3
 			}, {
 				"id": 10,
 				"percentage": 0
@@ -2053,37 +1270,8 @@
 			}
 		]
 	}, {
-		"id": 72,
-		"name": "Meadowfoam Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 73,
-		"name": "Milk Fat, any bovine",
+		"name": "Milk Fat",
 		"composition": [{
 				"id": 1,
 				"percentage": 4
@@ -2108,35 +1296,6 @@
 			}, {
 				"id": 10,
 				"percentage": 1
-			}
-		]
-	}, {
-		"id": 74,
-		"name": "Milk Thistle Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 7
-			}, {
-				"id": 7,
-				"percentage": 2
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 26
-			}, {
-				"id": 9,
-				"percentage": 64
-			}, {
-				"id": 10,
-				"percentage": 0
 			}
 		]
 	}, {
@@ -2198,95 +1357,8 @@
 			}
 		]
 	}, {
-		"id": 77,
-		"name": "Moringa Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 7
-			}, {
-				"id": 7,
-				"percentage": 7
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 71
-			}, {
-				"id": 9,
-				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 78,
-		"name": "Mowrah Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 24
-			}, {
-				"id": 7,
-				"percentage": 22
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 36
-			}, {
-				"id": 9,
-				"percentage": 15
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 79,
-		"name": "Murumuru Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 47
-			}, {
-				"id": 2,
-				"percentage": 26
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 15
-			}, {
-				"id": 9,
-				"percentage": 3
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
 		"id": 80,
-		"name": "Mustard Oil, kachi ghani",
+		"name": "Mustard Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -2322,35 +1394,6 @@
 			}, {
 				"id": 2,
 				"percentage": 99
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 82,
-		"name": "Neatsfoot Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
 			}, {
 				"id": 3,
 				"percentage": 0
@@ -2517,64 +1560,6 @@
 			}
 		]
 	}, {
-		"id": 88,
-		"name": "Olive Oil  pomace",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 14
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 69
-			}, {
-				"id": 9,
-				"percentage": 12
-			}, {
-				"id": 10,
-				"percentage": 2
-			}
-		]
-	}, {
-		"id": 89,
-		"name": "Ostrich Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 3
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 26
-			}, {
-				"id": 7,
-				"percentage": 6
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 37
-			}, {
-				"id": 9,
-				"percentage": 17
-			}, {
-				"id": 10,
-				"percentage": 3
-			}
-		]
-	}, {
 		"id": 90,
 		"name": "Palm Kernel Oil",
 		"composition": [{
@@ -2605,7 +1590,7 @@
 		]
 	}, {
 		"id": 91,
-		"name": "Palm Kernel Oil Flakes, hydrogenated",
+		"name": "hydrogenated Palm Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 49
@@ -2750,7 +1735,7 @@
 		]
 	}, {
 		"id": 96,
-		"name": "Papaya seed oil, Carica papaya",
+		"name": "Papaya seed oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -2801,35 +1786,6 @@
 			}, {
 				"id": 9,
 				"percentage": 70
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 98,
-		"name": "Pataua (Patawa) Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 13
-			}, {
-				"id": 7,
-				"percentage": 4
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 78
-			}, {
-				"id": 9,
-				"percentage": 3
 			}, {
 				"id": 10,
 				"percentage": 1
@@ -2920,64 +1876,6 @@
 			}, {
 				"id": 10,
 				"percentage": 2
-			}
-		]
-	}, {
-		"id": 102,
-		"name": "Perilla Seed Oil",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 2
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 15
-			}, {
-				"id": 9,
-				"percentage": 16
-			}, {
-				"id": 10,
-				"percentage": 56
-			}
-		]
-	}, {
-		"id": 103,
-		"name": "Pine Tar, lye calc only no FA",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 0
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
 			}
 		]
 	}, {
@@ -3098,7 +1996,7 @@
 		]
 	}, {
 		"id": 108,
-		"name": "Pracaxi (Pracachy) Seed Oil - hair conditioner",
+		"name": "Pracaxi Seed Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 1
@@ -3127,7 +2025,7 @@
 		]
 	}, {
 		"id": 109,
-		"name": "Pumpkin Seed Oil virgin",
+		"name": "Pumpkin Seed Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -3152,35 +2050,6 @@
 			}, {
 				"id": 10,
 				"percentage": 0
-			}
-		]
-	}, {
-		"id": 110,
-		"name": "Rabbit Fat",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 3
-			}, {
-				"id": 3,
-				"percentage": 30
-			}, {
-				"id": 7,
-				"percentage": 6
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 30
-			}, {
-				"id": 9,
-				"percentage": 20
-			}, {
-				"id": 10,
-				"percentage": 5
 			}
 		]
 	}, {
@@ -3272,7 +2141,7 @@
 		]
 	}, {
 		"id": 114,
-		"name": "Rice Bran Oil, refined",
+		"name": "Rice Bran Oil",
 		"composition": [{
 				"id": 1,
 				"percentage": 0
@@ -3326,35 +2195,6 @@
 			}, {
 				"id": 10,
 				"percentage": 31
-			}
-		]
-	}, {
-		"id": 116,
-		"name": "Sacha Inchi, Plukenetia volubilis",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 4
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 10
-			}, {
-				"id": 9,
-				"percentage": 35
-			}, {
-				"id": 10,
-				"percentage": 48
 			}
 		]
 	}, {
@@ -3468,35 +2308,6 @@
 			}, {
 				"id": 9,
 				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 121,
-		"name": "Saw Palmetto Extract",
-		"composition": [{
-				"id": 1,
-				"percentage": 29
-			}, {
-				"id": 2,
-				"percentage": 11
-			}, {
-				"id": 3,
-				"percentage": 8
-			}, {
-				"id": 7,
-				"percentage": 2
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 35
-			}, {
-				"id": 9,
-				"percentage": 4
 			}, {
 				"id": 10,
 				"percentage": 1
@@ -3642,93 +2453,6 @@
 			}, {
 				"id": 9,
 				"percentage": 6
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 127,
-		"name": "Shea Oil, fractionated",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 10
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 73
-			}, {
-				"id": 9,
-				"percentage": 11
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 128,
-		"name": "SoapQuick, conventional",
-		"composition": [{
-				"id": 1,
-				"percentage": 13
-			}, {
-				"id": 2,
-				"percentage": 6
-			}, {
-				"id": 3,
-				"percentage": 17
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 5
-			}, {
-				"id": 6,
-				"percentage": 42
-			}, {
-				"id": 9,
-				"percentage": 8
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 129,
-		"name": "SoapQuick, organic",
-		"composition": [{
-				"id": 1,
-				"percentage": 13
-			}, {
-				"id": 2,
-				"percentage": 5
-			}, {
-				"id": 3,
-				"percentage": 20
-			}, {
-				"id": 7,
-				"percentage": 3
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 45
-			}, {
-				"id": 9,
-				"percentage": 10
 			}, {
 				"id": 10,
 				"percentage": 0
@@ -3967,209 +2691,6 @@
 			}
 		]
 	}, {
-		"id": 138,
-		"name": "Tallow Deer",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 1
-			}, {
-				"id": 3,
-				"percentage": 20
-			}, {
-				"id": 7,
-				"percentage": 24
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 30
-			}, {
-				"id": 9,
-				"percentage": 15
-			}, {
-				"id": 10,
-				"percentage": 3
-			}
-		]
-	}, {
-		"id": 139,
-		"name": "Tallow Goat",
-		"composition": [{
-				"id": 1,
-				"percentage": 5
-			}, {
-				"id": 2,
-				"percentage": 11
-			}, {
-				"id": 3,
-				"percentage": 23
-			}, {
-				"id": 7,
-				"percentage": 30
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 29
-			}, {
-				"id": 9,
-				"percentage": 2
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 140,
-		"name": "Tallow Sheep",
-		"composition": [{
-				"id": 1,
-				"percentage": 4
-			}, {
-				"id": 2,
-				"percentage": 10
-			}, {
-				"id": 3,
-				"percentage": 24
-			}, {
-				"id": 7,
-				"percentage": 13
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 26
-			}, {
-				"id": 9,
-				"percentage": 5
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 141,
-		"name": "Tamanu Oil, kamani",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 12
-			}, {
-				"id": 7,
-				"percentage": 13
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 34
-			}, {
-				"id": 9,
-				"percentage": 38
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 142,
-		"name": "Tucuma Seed Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 48
-			}, {
-				"id": 2,
-				"percentage": 23
-			}, {
-				"id": 3,
-				"percentage": 6
-			}, {
-				"id": 7,
-				"percentage": 0
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 13
-			}, {
-				"id": 9,
-				"percentage": 0
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 143,
-		"name": "Ucuuba Butter",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 0
-			}, {
-				"id": 7,
-				"percentage": 31
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 44
-			}, {
-				"id": 9,
-				"percentage": 5
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	}, {
-		"id": 144,
-		"name": "Walmart GV Shortening, tallow, palm",
-		"composition": [{
-				"id": 1,
-				"percentage": 1
-			}, {
-				"id": 2,
-				"percentage": 4
-			}, {
-				"id": 3,
-				"percentage": 35
-			}, {
-				"id": 7,
-				"percentage": 14
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 37
-			}, {
-				"id": 9,
-				"percentage": 6
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
 		"id": 145,
 		"name": "Walnut Oil",
 		"composition": [{
@@ -4257,64 +2778,6 @@
 			}
 		]
 	}, {
-		"id": 148,
-		"name": "Yangu, cape chestnut",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 18
-			}, {
-				"id": 7,
-				"percentage": 5
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 45
-			}, {
-				"id": 9,
-				"percentage": 30
-			}, {
-				"id": 10,
-				"percentage": 1
-			}
-		]
-	}, {
-		"id": 149,
-		"name": "Zapote seed oil, (Aceite de Sapuyul or Mamey)",
-		"composition": [{
-				"id": 1,
-				"percentage": 0
-			}, {
-				"id": 2,
-				"percentage": 0
-			}, {
-				"id": 3,
-				"percentage": 9
-			}, {
-				"id": 7,
-				"percentage": 21
-			}, {
-				"id": 8,
-				"percentage": 0
-			}, {
-				"id": 6,
-				"percentage": 52
-			}, {
-				"id": 9,
-				"percentage": 13
-			}, {
-				"id": 10,
-				"percentage": 0
-			}
-		]
-	},{
 	"id": 150,
 	"name": "Abyssinian Oil",
 	"composition": [{

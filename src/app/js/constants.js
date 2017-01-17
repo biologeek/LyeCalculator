@@ -10,7 +10,7 @@
 	})
 	.constant('LOCALES', {
     'locales': {
-        'en_US': 'English',
+        'en_EN': 'English',
         'fr_FR' : 'Français'
     },
     'preferredLocale': 'fr_FR'

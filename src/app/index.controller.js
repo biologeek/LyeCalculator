@@ -5,10 +5,10 @@
 
 
 
-	IndexController.$inject = ['$scope', 'Notification', 'CalculatorService', 'Constants', '$location', '$anchorScroll', '$animate', '$translate'];
+	IndexController.$inject = ['$scope', 'Notification', 'CalculatorService', 'Constants', '$location', '$anchorScroll', '$animate', '$translate', 'LOCALES'];
 
 
-	function IndexController($scope, Notification, CalculatorService, Constants, $location, $anchorScroll, $animate, $translate){
+	function IndexController($scope, Notification, CalculatorService, Constants, $location, $anchorScroll, $animate, $translate, LOCALES){
 
 		var vm = this;
 
@@ -35,6 +35,8 @@
 		 * Super fat in percentage
 		 */
 		vm.recipe.superFat = 5;	
+
+		vm.availableLanguages = LOCALES.locales
 
 
 
@@ -170,6 +172,15 @@
 		var toTriglyceride = function(singleFattyAcidMolarMass){
 			console.log(singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS);
 			return singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS;
+		}
+
+
+
+
+		vm.switchLocale = function(locale){
+
+			$translate.use(locale);
+
 		}
 	}
 })();

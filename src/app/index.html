@@ -45,20 +45,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
         </div>
 	            <!-- /.navbar-header -->
 
 	    <ul class="nav navbar-top-links navbar-right">
 	        <li class="dropdown">
 	            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-	                <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+	                <i class="glyphicon glyphicon-flag"></i> <i class="fa fa-caret-down"></i>
 	            </a>
 	            <ul class="dropdown-menu pull-right">
-	                <li>
-	                    <a href="#">
+	                <li ng-repeat="(id, tr) in idxController.availableLanguages">
+	                    <a href="#" ng-click="idxController.switchLocale(id)">
 	                        <div>
-	                            <img style="max-width : 20px" src="static/fr_FR.png">
+	                            <img style="max-width : 20px" src="static/{{id}}.png"> {{tr}}
 	                        </div>
 	                    </a>
 	                </li>

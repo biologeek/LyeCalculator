@@ -70,6 +70,8 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('dist/css/'))
     gulp.src(['app/*.js*'])
         .pipe(gulp.dest('dist/'))
+    gulp.src(['app/static/*'])
+        .pipe(gulp.dest('dist/static'))
     gulp.src(['app/js/**/*.js'])
         .pipe(gulp.dest('dist/js/'))
     gulp.src(['app/**/*.html'])
@@ -77,19 +79,19 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less','minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less','minify-css', 'js', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: 'app'
+            baseDir: 'dist'
         },
     })
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'js', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'js', 'minify-js', 'copy'], function() {
     gulp.watch('app/less/*.less', ['less']);
     gulp.watch('app/css/*.css', ['minify-css']);
     gulp.watch('app/js/**/*.js', ['minify-js']);

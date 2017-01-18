@@ -141,7 +141,14 @@
 		}
 
 		var calculateSuperFat = function(){
-			vm.calculatedNaOHQuantity =  (100 - vm.superFat) * vm.calculatedNaOHQuantity / 100;			
+
+			console.log("avant : "+ vm.recipe.calculatedNaOHQuantity);
+			
+			vm.calculatedNaOHQuantity = (100-vm.superFat)*parseFloat(vm.recipe.calculatedNaOHQuantity)/100
+			console.log("apres : "+ vm.calculatedNaOHQuantity)
+			console.log("apres : "+ parseFloat(vm.recipe.calculatedNaOHQuantity))
+			console.log("apres : "+typeof (100 - vm.superFat))
+			console.log("apres : "+  parseFloat((100 - vm.superFat) * vm.recipe.calculatedNaOHQuantity))
 		}
 
 		var calculateMolarQuantityForSingleFattyAcid = function(component, item){

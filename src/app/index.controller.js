@@ -83,7 +83,7 @@
 		}
 
 		/**
-		 * Based on vm.selectedOils, vm.superFat and quantities, calculates necesary NaOH quantity in same unit
+		 * Based on vm.selectedOils, vm.recipe.superFat and quantities, calculates necesary NaOH quantity in same unit
 		 */
 		vm.calculateLyeQuantity = function(){
 			var currentNaOHQuantity = 0;//grams
@@ -141,7 +141,9 @@
 		}
 
 		var calculateSuperFat = function(){
-			vm.calculatedNaOHQuantity =  (100 - vm.superFat) * vm.calculatedNaOHQuantity / 100;			
+			
+			vm.recipe.calculatedNaOHQuantity = ((100-vm.recipe.superFat)*vm.recipe.calculatedNaOHQuantity/100).toFixed(3);
+			
 		}
 
 		var calculateMolarQuantityForSingleFattyAcid = function(component, item){
@@ -170,7 +172,7 @@
 		}
 
 		var toTriglyceride = function(singleFattyAcidMolarMass){
-			console.log(singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS);
+			//console.log(singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS);
 			return singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS;
 		}
 

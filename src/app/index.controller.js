@@ -117,9 +117,7 @@
 				calculateSuperFat();
 				calculateWaterContent();
 				switchToResult();
-
-			}
-			
+			}			
 		}
 
 		vm.resetForm = function(){
@@ -141,13 +139,10 @@
 		}
 
 		var calculateSuperFat = function(){
-			
 			vm.recipe.calculatedNaOHQuantity = ((100-vm.recipe.superFat)*vm.recipe.calculatedNaOHQuantity/100).toFixed(3);
-			
 		}
 
 		var calculateMolarQuantityForSingleFattyAcid = function(component, item){
-
 			var result = 0;
 			//console.log('1. '+result.toFixed(5))
 			result = item.quantity * component.percentage / (toTriglyceride(component.molarMass) * 100);	
@@ -162,13 +157,11 @@
 		}
 
 		var switchToResult = function(){
-
 			vm.resultClass = Constants.PANEL_PRIMARY;
 
 			//console.log(vm.resultClass)
 			$location.hash('result-panel');
 			$anchorScroll();
-
 		}
 
 		var toTriglyceride = function(singleFattyAcidMolarMass){
@@ -176,13 +169,28 @@
 			return singleFattyAcidMolarMass * 3 + Constants.GLYCEROL_MOLAR_MASS - 3 * Constants.WATER_MOLAR_MASS;
 		}
 
+		vm.processDetailedReport = function(){
 
+			calculateDetailedFattyAcidsComposition();
+		}
 
+		var calculateDetailedFattyAcidsComposition = function(){
+
+			vm.recipe.detailedFattyAcidComposition = _.cloneDeep(vm.fattyAcidsList);
+
+			for (i in vm.recipe.selectedOils){
+				var oil = vm.recipe.selectedOils[i];
+				for(j in oil){
+					var fa = oil[j];
+					_.find(vm.recipe.detailedFattyAcidComposition, function(elt){
+						return elt.id === fa.id;
+					});
+				}
+			}
+		}
 
 		vm.switchLocale = function(locale){
-
 			$translate.use(locale);
-
 		}
 	}
 })();

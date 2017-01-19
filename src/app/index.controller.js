@@ -71,14 +71,10 @@
 		 */
 		vm.computeOilQuantity = function(){
 			var total = 0;
-
 			_.each(vm.recipe.selectedOils, function(e){
-
 				//console.log(e)
 				total = total + parseFloat(e.quantity);
 			});
-
-			//console.log(total)
 			return total;
 		}
 
@@ -117,6 +113,7 @@
 				calculateSuperFat();
 				calculateWaterContent();
 				switchToResult();
+				vm.processDetailedReport();
 			}			
 		}
 
@@ -178,13 +175,26 @@
 
 			vm.recipe.detailedFattyAcidComposition = _.cloneDeep(vm.fattyAcidsList);
 
-			for (i in vm.recipe.selectedOils){
+
+			/*
+			 * Inserting quantities of each fatty acid into recipe table
+			 */
+			for (var i in vm.recipe.selectedOils){
 				var oil = vm.recipe.selectedOils[i];
-				for(j in oil){
-					var fa = oil[j];
-					_.find(vm.recipe.detailedFattyAcidComposition, function(elt){
+				for(var j in oil.composition){
+
+					var fa = oil.composition[j];
+
+					var correspondingFattyAcidInRecipeList = _.find(vm.recipe.detailedFattyAcidComposition, function(elt){
 						return elt.id === fa.id;
 					});
+
+					console.log(correspondingFattyAcidInRecipeList)
+					if (isNan(correspondingFattyAcidInRecipeList.quantity)){
+						console.log("nan")
+					}
+					correspondingFattyAcidInRecipeList.quantity = correspondingFattyAcidInRecipeList.quantity + fa.percentage * vm.computeOilQuantity();
+
 				}
 			}
 		}

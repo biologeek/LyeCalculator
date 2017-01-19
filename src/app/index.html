@@ -222,8 +222,13 @@
 			    <div id="collapse1" class="panel-collapse collapse">
 					<div class="panel-body">
 						<table class="table table-striped">
-							<tr>
-								<td>No detailed report</td>
+							<th>
+								<td>{{"report.detail.fattyAcids.header.name" | translate}}</td>
+								<td>{{"report.detail.fattyAcids.header.quantity" | translate}}</td>
+							</th>
+							<tr ng-repeat="fattyAcid in idxController.recipe.detailedFattyAcidComposition">
+								<td>{{fattyAcid.name}}</td>
+								<td>{{fattyAcid.quantity}}</td>
 							</tr>							
 						</table>
 					</div>

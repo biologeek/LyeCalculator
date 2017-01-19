@@ -36,7 +36,13 @@
 
 		},
 		"detail" : {
-			"title" : "Detailed report"
+			"title" : "Detailed report",
+			"fattyAcids": {
+				"header" : {
+					"name" : "Fatty acid",
+					"quantity" : "Quantity"
+				}
+			}
 		}
 	}
 }

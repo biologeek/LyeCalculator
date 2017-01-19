@@ -36,7 +36,13 @@
 
 		},
 		"detail" : {
-			"title" : "Rapport détaillé"
+			"title" : "Rapport détaillé",
+			"fattyAcids": {
+				"header" : {
+					"name" : "Acide gras",
+					"quantity" : "Quantité"
+				}
+			}
 		}
 	}
 }

@@ -189,11 +189,18 @@
 						return elt.id === fa.id;
 					});
 
-					console.log(correspondingFattyAcidInRecipeList)
-					if (isNan(correspondingFattyAcidInRecipeList.quantity)){
-						console.log("nan")
+					console.log(correspondingFattyAcidInRecipeList.quantity)
+					console.log(fa.percentage)
+					console.log(vm.computeOilQuantity())
+
+					if (typeof correspondingFattyAcidInRecipeList.quantity == "undefined"){
+						console.log("init")
+						correspondingFattyAcidInRecipeList.quantity = 0;
 					}
-					correspondingFattyAcidInRecipeList.quantity = correspondingFattyAcidInRecipeList.quantity + fa.percentage * vm.computeOilQuantity();
+					correspondingFattyAcidInRecipeList.quantity = correspondingFattyAcidInRecipeList.quantity + fa.percentage * vm.computeOilQuantity()/100;
+
+					console.log(correspondingFattyAcidInRecipeList.quantity);
+					correspondingFattyAcidInRecipeList.quantity = correspondingFattyAcidInRecipeList.quantity;
 
 				}
 			}

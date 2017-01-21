@@ -22,4 +22,5 @@ Oils and fats is composed of several triglycerides. Saponification consists in t
 - Go to src/ folder 
 <br>
 - Type 'gulp build'
-
+<br>
+- Deploy dist/ content to your webserver

@@ -8,7 +8,7 @@ Small AngularJS application to calculate Lye quantity to add to make soap
 
 Lye quantity is calculated using molar mass of each component of oil.
 <br>
-Oils and fats is composed of several triglycerides. Saponification consists in transforming triglycerides into single fatty acids that are soap.
+Oils and fats are composed of several triglycerides. Saponification consists in transforming triglycerides into single fatty acids that are soap.
 
 <br>This reaction is possible with sodium hydroxyde : 
 <br>
